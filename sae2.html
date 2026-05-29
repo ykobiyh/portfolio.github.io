@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes SAÉ</title>
+    <link rel="stylesheet" href="css/sae2.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h1 class="logo">Yanis</h1>
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="sae2.html">Mes Projets</a></li>
+        <li><a href="profil.html">Bilan</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>Mes Projets</h1>
+
+    <div class="sae">
+        <button class="sae-title">SAE11 - Sensibilisation à l'hygiène informatique et à la cybersécurité</button>
+        <div class="sae-content">
+
+            <h3>Description / Objectif</h3>
+            <p>
+                L'objectif de cette SAÉ était de s'approprier les concepts fondamentaux de la sécurité des systèmes d'information à travers le MOOC de l'ANSSI, afin de développer des réflexes professionnels face aux cybermenaces. Les connaissances ont été validées par un QCM officiel et une soutenance orale.
+            </p>
+
+            <h3>Mise en lien avec les compétences et Apprentissages Critiques (AC)</h3>
+            <p>
+                Cette SAÉ s'inscrit directement dans la compétence <strong>"Gérer un projet de sécurité"</strong>. Elle valide les AC liés à la compréhension des risques informatiques, à l'application des règles d'hygiène numérique, et à la communication professionnelle. L'analyse des vulnérabilités courantes justifie l'importance de ces apprentissages pour sécuriser un parc informatique.
+            </p>
+
+            <h3>Tâches réalisées</h3>
+            <p>
+                Suivi rigoureux des 4 modules du MOOC ANSSI (authentification, sécurité web, nomadisme, sécurité des postes), fiches de synthèse personnelles, passage et obtention des certifications de modules, et préparation d'un support visuel pour l'évaluation orale.
+            </p>
+
+            <h3>Résultats obtenus et Preuves de compétences</h3>
+            <p>
+                L'intégralité des modules a été validée avec succès. Vous trouverez ci-dessous un exemple de ce j'ai expérimenté au cour de cette SAE.
+            </p>
+            <div class="preuve-image">
+                <img src="img/hydra.webp" alt="Attestation de réussite MOOC ANSSI - Yanis" style="max-width:100%; height:auto; margin-top:10px; border:1px solid #ccc;">
+            </div>
+
+            <h3>Analyse réflexive (Progression et Adaptation)</h3>
+            <p>
+                Au départ, j'appréhendais la densité technique des concepts de cryptographie et de gestion des clés. Pour y remédier, j'ai adapté ma méthode de travail en structurant des cartes mentales. Cette démarche m'a permis de progresser significativement sur la clarté de mon argumentation lors de l'oral final, passant d'une simple restitution de cours à une véritable posture de conseil en hygiène informatique.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="sae">
+        <button class="sae-title">SAE12 - S’initier aux réseaux informatiques</button>
+        <div class="sae-content">
+
+            <h3>Description / Objectif</h3>
+            <p>
+                Cette SAÉ consistait à concevoir, dimensionner et déployer une infrastructure réseau locale (LAN) sécurisée pour une entreprise virtuelle, en intégrant un plan d'adressage IPv4 structuré, des commutateurs/routeurs Cisco et un serveur Linux Debian.
+            </p>
+
+            <h3>Mise en lien avec les compétences et Apprentissages Critiques (AC)</h3>
+            <p>
+                Ce projet est au cœur de la compétence <strong>"Connecter les entreprises"</strong> et <strong>"Administrer les systèmes"</strong>. Il valide la capacité à segmenter un réseau (VLAN), à acheminer des paquets (routage statique/inter-VLAN) et à déployer des services indispensables (DNS, DHCP, Apache). Ces AC sont justifiés par la nécessité d'isoler les flux d'une infrastructure d'entreprise pour des raisons de performance et de sécurité.
+            </p>
+
+            <h3>Tâches réalisées</h3>
+            <p>
+                Calcul et découpage de sous-réseaux (VLSM), configuration physique et logique du matériel Cisco (VTP, Spanning-Tree, SSH), installation et durcissement d'un serveur Debian avec configuration des fichiers de services (named.conf, dhcpd.conf) et tests d'interconnexion (ping, traceroute, Wireshark).
+            </p>
+
+            <h3>Résultats obtenus et Preuves de compétences</h3>
+            <p>
+                L'infrastructure globale est pleinement fonctionnelle : les machines clientes reçoivent dynamiquement leurs configurations IP et accèdent au site web interne via le serveur DNS. Le schéma d'architecture ci-dessous met en évidence la topologie logique retenue.
+            </p>
+            <div class="preuve-image">
+                <img src="img/Capture d’écran 2026-05-18 221158.jpg" alt="Schéma de la topologie réseau Cisco et Debian - Yanis" style="max-width:100%; height:auto; margin-top:10px; border:1px solid #ccc;">
+            </div>
+
+            <h3>Analyse réflexive (Progression et Adaptation)</h3>
+            <p>
+                La principale difficulté a été la résolution d'un problème de routage inter-VLAN où les paquets n'atteignaient pas la passerelle Debian. En analysant les tables de routage et en utilisant Wireshark, j'ai compris qu'il s'agissait d'une mauvaise configuration d'encapsulation (802.1Q) sur le trunk. Cette erreur m'a forcé à être plus méthodique et rigoureux dans mes diagnostics système, renforçant ainsi mon autonomie technique.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="sae">
+        <button class="sae-title">SAE13 - Mesures et transmission</button>
+        <div class="sae-content">
+
+            <h3>Description / Objectif</h3>
+            <p>
+                L'objectif était d'analyser la qualité et les limites physiques des supports de transmission de l'information (cuivre, fibre, hertzien). Il s'agissait de caractériser des signaux, de mesurer des affaiblissements et de comprendre l'impact du bruit sur la bande passante.
+            </p>
+
+            <h3>Mise en lien avec les compétences et Apprentissages Critiques (AC)</h3>
+            <p>
+                Cette SAÉ s'associe à la compétence <strong>"Connecter les utilisateurs"</strong>. Elle valide les AC portant sur la maîtrise des grandeurs physiques (fréquence, atténuation en dB, rapport signal sur bruit) et l'utilisation d'outils de mesure en laboratoire. Comprendre ces phénomènes est indispensable pour diagnostiquer des pannes physiques ou valider la conformité d'un câblage réseau.
+            </p>
+
+            <h3>Tâches réalisées</h3>
+            <p>
+                Manipulation d'un oscilloscope et d'un générateur de fonctions (GBF), calculs théoriques de la capacité de canal (loi de Shannon-Hartley), mesures expérimentales de l'atténuation d'un signal en fonction de la distance, et rédaction d'un compte-rendu de synthèse technique.
+            </p>
+
+            <h3>Résultats obtenus et Preuves de compétences</h3>
+            <p>
+                Validation des modèles théoriques par la pratique avec l'obtention de courbes de réponse en fréquence précises. La capture suivante de mon compte-rendu montre mes relevés expérimentaux par rapport aux courbes théoriques attendues.
+            </p>
+            <div class="preuve-image">
+                <img src="img/telecom.jpg" alt="Courbes de mesures et relevés d'oscilloscope - Yanis" style="max-width:100%; height:auto; margin-top:10px; border:1px solid #ccc;">
+            </div>
+
+            <h3>Analyse réflexive (Progression et Adaptation)</h3>
+            <p>
+                L'utilisation de l'oscilloscope numérique a d'abord été une source d'erreurs, notamment pour synchroniser correctement les signaux bruités. En sollicitant l'enseignant et en retentant les manipulations, j'ai appris à régler finement les déclencheurs (Trigger). Cela m'a appris l'importance de la précision et du doute scientifique face à une mesure aberrante, développant ainsi mon esprit critique.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="sae">
+        <button class="sae-title">SAE14 - Se présenter sur Internet</button>
+        <div class="sae-content">
+
+            <h3>Description / Objectif</h3>
+            <p>
+                Conception et réalisation d'un site web portfolio professionnel responsive (s'adaptant aux mobiles) en exploitant uniquement les technologies HTML5 et CSS3, tout en respectant les critères d'accessibilité et les standards du W3C.
+            </p>
+
+            <h3>Mise en lien avec les compétences et Apprentissages Critiques (AC)</h3>
+            <p>
+                Ce projet valide des compétences transverses et la compétence <strong>"Créer des outils de communication"</strong>. Les AC démontrés sont la maîtrise absolue de la structure sémantique HTML, l'utilisation avancée de Flexbox/Grid pour la mise en page, l'intégration du responsive design via les Media Queries, et la gestion du versioning. L'atteinte de ces AC garantit un code propre, maintenable et indexable par les moteurs de recherche.
+            </p>
+
+            <h3>Tâches réalisées</h3>
+            <p>
+                Création des maquettes fonctionnelles (Wireframes), rédaction du code sémantique HTML5, conception de la charte graphique en CSS, intégration d'animations fluides, tests de compatibilité multi-navigateurs, validation au validateur W3C, et déploiement continu à l'aide de Git et GitHub Pages.
+            </p>
+
+            <h3>Résultats obtenus et Preuves de compétences</h3>
+            <p>
+                Un site web entièrement valide, fluide et responsive. L'image suivante montre le rendu visuel de la page d'accueil ainsi que le score parfait obtenu lors du test de validation sémantique.
+            </p>
+            <div class="preuve-image">
+                <img src="img/apercu-site.jpg" alt="Aperçu du site web et validation W3C - Yanis" style="max-width:100%; height:auto; margin-top:10px; border:1px solid #ccc;">
+                <img src="img/validation-w3c.jpg" alt="Aperçu du site web et validation W3C - Yanis" style="max-width:100%; height:auto; margin-top:10px; border:1px solid #ccc;">
+            </div>
+
+            <h3>Analyse réflexive (Progression et Adaptation)</h3>
+            <p>
+                Mon principal défi a été de rendre le menu de navigation (Navbar) parfaitement responsive sur les écrans de smartphones sans utiliser de JavaScript. J'ai dû faire des recherches supplémentaires pour exploiter l'astuce CSS de la "checkbox masquée" pour déclencher le menu burger. Cette contrainte m'a poussé à approfondir mes connaissances en CSS moderne et m'a prouvé qu'on pouvait trouver des solutions élégantes et légères en respectant scrupuleusement les standards.
+            </p>
+
+        </div>
+    </div>
+
+    <div class="sae">
+        <button class="sae-title">SAE15 - Exploitation des données OpenStreetMap</button>
+        <div class="sae-content">
+
+            <h3>Description / Objectif</h3>
+            <p>
+                L'objectif était de concevoir une application de traitement de données géographiques en Python capable d'interroger les API d'OpenStreetMap (Overpass API), d'extraire des flux de données complexes (au format JSON/XML) et de les formater automatiquement sous forme de fiches de synthèse interactives (Markdown/HTML).
+            </p>
+
+            <h3>Mise en lien avec les compétences et Apprentissages Critiques (AC)</h3>
+            <p>
+                Cette SAÉ s'inscrit dans la compétence <strong>"Développer des applications pour les réseaux"</strong>. Elle valide les AC liés à l'algorithmie en Python, à la manipulation de structures de données imbriquées (dictionnaires, listes), à la gestion de requêtes HTTP réseau et au parsing de fichiers. Ces apprentissages sont essentiels pour automatiser des tâches d'administration ou traiter de grands volumes de logs réseaux.
+            </p>
+
+            <h3>Tâches réalisées</h3>
+            <p>
+                Écriture des scripts Python (modules `requests` et `json`), écriture de requêtes Overpass spécifiques pour cibler des points d'intérêt (POI), gestion des exceptions réseau, filtrage des données géographiques extraites, et programmation de l'écriture automatisée de fichiers de sortie au format Markdown.
+            </p>
+
+            <h3>Résultats obtenus et Preuves de compétences</h3>
+            <p>
+                Le script automatise la génération de rapports complets en quelques secondes. Ci-dessous, vous pouvez observer un extrait de mon code Python structuré.
+            </p>
+            <div class="preuve-image">
+                <img src="img/extrait-code.jpg" alt="Extrait de code Python et rendu de la fiche générée - Yanis" style="max-width:100%; height:auto; margin-top:10px; border:1px solid #ccc;">
+            </div>
+
+            <h3>Analyse réflexive (Progression et Adaptation)</h3>
+            <p>
+                Au début du projet, mon script plantait dès que l'API OpenStreetMap renvoyait une valeur vide ou manquante pour un bâtiment (ex: absence de tag "name"). J'ai dû faire évoluer mon code en remplaçant mes accès directs aux dictionnaires par la méthode `.get()` de Python afin de gérer proprement les valeurs par défaut. Cette expérience m'a appris à anticiper les anomalies de données externes et à rendre mes programmes beaucoup plus robustes et tolérants aux pannes.
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
